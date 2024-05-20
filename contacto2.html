@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo1.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <!-- cabecera -->
+        <header class="cabecera">
+
+            <!-- logo -->
+            <div class="logo">
+                <a href="#" title="Plata Fácil - Servicios Financieros">
+                    <img src="img/logo.png" alt="PlataFácil" title="PlataFácil" width="64" height="64">
+                    PlataFácil
+                </a>
+            </div>
+            <!-- fin logo -->
+
+            <!-- menu -->
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="servicios.html">SERVICIOS</a></li>
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <!-- fin menu -->
+
+        </header>
+        <!-- fin cabecera -->
+
+        <!-- Contenido -->
+        <main class="contacto">
+            <div class="mapa">
+                <h3>Ubicación</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4665.2831443736995!2d-62.27331089580314!3d-38.7016664736968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95edbb5108788727%3A0xa75187e0be626c75!2sUniversidad%20Nacional%20del%20Sur%20(UNS)%20-%20Complejo%20Alem!5e0!3m2!1ses-419!2sar!4v1714179186189!5m2!1ses-419!2sar"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>Dirección: XX - Prov. XX
+                </p>
+            </div>
+            <br>
+            <h3>Formulario de contacto</h3>
+            <form action="" class="formulario" id="formulario">
+
+                <!-- Grupo: Nombre -->
+                <div class="formulario_grupo" id="grupo_nombre">
+                    <label for="nombre" class="formulario_label" required>Nombre *</label>
+                    <div class="formulario_grupo-input">
+                        <input type="text" class="formulario_input" name="nombre" id="nombre" size="35"
+                            placeholder="Juan">
+                        <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario_input-error">El nombre deben ser solamente letras.</p>
+                </div>
+
+                <!-- Grupo: Apellido -->
+                <div class="formulario_grupo" id="grupo_apellido">
+                    <label for="apellido" class="formulario_label" required>Apellido *</label>
+                    <div class="formulario_grupo-input">
+                        <input type="text" class="formulario_input" size="15" maxlength="15" name="apellido"
+                            id="apellido" placeholder="Perez">
+                        <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario_input-error">El apellido deben ser solamente letras.</p>
+                </div>
+
+                <!-- Grupo: Correo Electronico -->
+                <div class="formulario_grupo" id="grupo_correo">
+                    <label for="correo" class="formulario_label" required>Correo Electrónico *</label>
+                    <div class="formulario_grupo-input">
+                        <input type="email" class="formulario_input" name="correo" id="correo"
+                            placeholder="correo@correo.com">
+                        <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario_input-error">El correo solo puede contener letras, numeros, puntos, guiones y
+                        guion bajo.</p>
+                </div>
+
+                <!-- Grupo: Teléfono -->
+                <div class="formulario_grupo" id="grupo_telefono">
+                    <label for="telefono" class="formulario_label" required>Teléfono *</label>
+                    <div class="formulario_grupo-input">
+                        <input type="text" class="formulario_input" maxlength="14" name="telefono" id="telefono"
+                            size="20" placeholder="4491234567">
+                        <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario_input-error">El telefono solo puede contener numeros y el maximo son 14
+                        dígitos. Sin guiones o paréntesis</p>
+                </div>
+
+                <!-- Grupo: Tipo Documento -->
+                <div class="formulario_grupo" id="grupo_documento">
+                    <label for="tipo_documento" class="formulario_label">Tipo de documento:</label>
+                    <div class="formulario_grupo-input">
+                        <select class="select" name="documento" id="documento" name="tipo_doc">
+                            <option value="">Seleccione una opcion</option>
+                            <option value="DNI">DNI</option>
+                            <option value="LE">LE</option>
+                            <option value="LC">LC</option>
+                            <option value="PAS">Pasaporte</option>
+                    </div>
+                </div>
+                <!-- Grupo: Nro Documento -->
+                <div class="formulario_grupo" id="grupo_nro_documento">
+                    <label for="documento" class="formulario_label">Número de documento</label>
+                    <div class="formulario_grupo-input">
+                        <input type="text" class="formulario_input" name="nro_doc" maxlength="8" placeholder="12345678" size="11">
+                        <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario_input-error">Coloque los 8 números de su documento.</p>
+                </div>
+                <!-- Grupo: Nro Pasaporte -->
+                <div class="formulario_grupo" id="grupo_pasaporte">
+                    <label for="pasaporte" class="formulario_label">Letras y números del Pasaporte</label>
+                    <div class="formulario_grupo-input">
+                        <input type="text" class="formulario_input" maxlength="9" name="pasaporte"
+                            placeholder="AAA999999" size="10" id="pasaporte">
+                            <i class="formulario_validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario_input-error">Coloque las 3 letras y 6 números de su pasaporte</p>
+                </div>
+                <!-- SUBIR ARCHIVO-->
+                <div class="formulario_grupo" id="grupo_file">
+                    <label for="foto" class="formulario_label">Adjunte el archivo</label>
+                    <input type="file" class="formulario_input">
+                </div>
+                <!-- CHECKBOX -->
+                <div class="formulario_grupo" id="grupo_check">
+                    <label class="formulario_label">
+                        <input type="checkbox" class="formulario_checkbox" name="promo" id="promo" checked>Acepto
+                        recibir
+                        información sobre promociones
+                        del banco
+                    </label>
+                </div>
+
+                <!-- Boton -->
+                <div class="formulario_mensaje" id="formulario_mensaje">
+                    <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Verificá que todos los campos estén
+                        completos y correctos.</p>
+                </div>
+                <div class="formulario_grupo formulario_grupo-btn">
+                    <button type="submit" class="formulario_btn">Enviar</button>
+                    <p class="formulario_mensaje-exito" id="formulario_mensaje-exito">Formulario enviado exitosamente!
+                        Dentro de las próximas 48hs. nos estaremos comunicando con usted.
+                    </p>
+                    </div>
+                    <div class="formulario_label">* Campo Obligatorio</div>
+    </div>
+    </form>
+    </main>
+
+    <!-- fin contenido -->
+    <footer class="pie">
+        <div class="logo-pie">
+            <a href="#" title="Plata Fácil">
+                <img src="img/logo.png" alt="Plata Fácil" title="Plata Fácil" width="32" height="32">
+                PlataFácil
+            </a>
+        </div>
+
+
+        <div class="info-footer">
+
+            <div class="menu">
+                <h3>| PRODUCTOS</h3>
+                <ul>
+                    <li><a href="servicios.html">» Tarjetas Credito/Debito</a></li>
+                    <li><a href="servicios.html">» Cuenta Sueldo </a></li>
+                    <li><a href="servicios.html">» Plazo Fijo</a></li>
+                    <li><a href="servicios.html">» Prestamos</a></li>
+                    <li><a href="servicios.html">» Tipo de Cambio</a></li>
+                </ul>
+            </div>
+
+            <div class="ayuda">
+                <h3>| INSTITUCION</h3>
+                <ul>
+                    <li><a href="nosotros.html">» Sobre Nosotros</a></li>
+                    <li><a href="nosotros.html">» Objetivos</a></li>
+                    <li><a href="nosotros.html">» Nuestro Equipo</a></li>
+                </ul>
+            </div>
+
+            <div class="legales">
+                <h3>| LEGALES</h3>
+                <ul>
+                    <li><a href="nosotros.html">» Privacidad</a></li>
+                    <li><a href="nosotros.html">» Seguridad</a></li>
+                    <li><a href="nosotros.html">» TyC</a></li>
+                    <li><a href="contactos.html">» Contacto</a></li>
+                </ul>
+            </div>
+
+
+            <div class="rrss">
+                <h3>| REDES SOCIALES</h3>
+                <span style="font-size: 2.7em">
+                    <a href="fb.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="ig.me" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                    <a href="x.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                    <a href="youtu.be" target="_blank"><i class="fab fa-youtube-square"></i></a>
+                </span>
+            </div>
+
+
+        </div>
+
+
+
+
+    </footer>
+    <script src="./js/script.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
