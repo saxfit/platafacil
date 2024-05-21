@@ -1,3 +1,11 @@
+:root {
+    --primary-color: #006666;
+    --secondary-color: #ffffff;
+    --third-color: #CCCCCC;
+    --texto: #e9e9e9;
+}
+
+
 *  {
     margin: 0;
     padding: 0;
@@ -5,8 +13,8 @@
 }
 
 BODY {
-    background-color: #ffffff;
-    color: #CCCCCC;
+    background-color: var(--secondary-color);
+    color: var(--third-color);
     aspect-ratio: 16 / 9;
 }
 
@@ -35,7 +43,7 @@ ul {
   *::-webkit-scrollbar-thumb {
     background-color: #006666;
     border-radius: 10px;
-    border: 3px solid #ffffff;
+    border: 3px solid var(--secondary-color)
   }
 
 
@@ -49,7 +57,7 @@ ul {
 
 .cabecera {
     width: 100%;
-    background-color: #006666;
+    background-color: var(--primary-color);
     height: 120px;
     text-shadow: #000000 1px 1px 1px;
     color: #e9e9e9;
@@ -68,7 +76,7 @@ ul {
 }
 
 .cabecera a {
-    color: #e9e9e9;
+    color: var(--texto);
     text-decoration: none;
 }
 
@@ -155,7 +163,7 @@ ul {
 
 .contenido h1 {
     font-size: 2em;
-    color: #006666;
+    color: var(--primary-color);
     text-align: center;
     margin: 5px 15px 5px 15px;
     text-shadow: -1px 3px 4px rgba(0,0,0,0.29);
@@ -164,7 +172,7 @@ ul {
 .contenido h2 {
     text-transform: uppercase;
     padding: 5px;
-    color: #006666;
+    color: var(--primary-color);
     font-size: 2em;
     text-shadow: -1px 3px 4px rgba(0,0,0,0.29);
 }
@@ -184,14 +192,14 @@ ul {
     justify-content: center;
     font-size: 3em;
     text-shadow: #000000 1px 1px 1px;
-    color: #ffffff;
+    color: var(--secondary-color);
     font-weight: 600;
     border-bottom: #008584 1px solid;
     padding-top: 120px;
     box-shadow: 0px 9px 6px 0px rgba(0,0,0,0.1);
     -webkit-box-shadow: 0px 9px 6px 0px rgba(0,0,0,0.1);
     -moz-box-shadow: 0px 9px 6px 0px rgba(0,0,0,0.1);
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid var(--secondary-color);
 }
 
 .contenido .slider .span {
@@ -258,7 +266,7 @@ ul {
     box-shadow: 0px 9px 6px 0px rgba(0,0,0,0.1);
     -webkit-box-shadow: 0px 9px 6px 0px rgba(0,0,0,0.1);
     -moz-box-shadow: 0px 9px 6px 0px rgba(0,0,0,0.1);
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid var(--secondary-color);
 }
 
 .contenido .cotizacion iframe {
@@ -286,16 +294,16 @@ ul {
     /*height: 450px;*/
     padding: 15px 0px 10px 0px;
     width: 100%;
-    background: #006666;
+    background: var(--primary-color);
     text-shadow: -1px 3px 4px rgba(0,0,0,0.29);
     box-shadow: 0px 9px 6px 0px rgba(0,0,0,0.1);
     -webkit-box-shadow: 0px 9px 6px 0px rgba(0,0,0,0.1);
     -moz-box-shadow: 0px 9px 6px 0px rgba(0,0,0,0.1);
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid var(--secondary-color);
 }
 
 .contenido .destacados .destacados-img img {
-    border: 1px solid #006666;
+    border: 1px solid  var(--primary-color);
     box-shadow: 0px 0px 0px 1px #008383;
     margin-right: 30px;
     margin-left: 30px;
@@ -364,14 +372,14 @@ ul {
     box-shadow: 0px 9px 6px 0px rgba(0,0,0,0.1);
     -webkit-box-shadow: 0px 9px 6px 0px rgba(0,0,0,0.1);
     -moz-box-shadow: 0px 9px 6px 0px rgba(0,0,0,0.1);
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid var(--secondary-color);
 
 }
 
 .contenido .servicios-destacados h2 {
     text-transform: uppercase;
     padding: 5px;
-    color: #006666;
+    color: var(--primary-color);
     font-size: 1.5em;
 }
 
@@ -395,7 +403,7 @@ ul {
     box-shadow: 0px 9px 6px 0px rgba(0,0,0,0.1);
     -webkit-box-shadow: 0px 9px 6px 0px rgba(0,0,0,0.1);
     -moz-box-shadow: 0px 9px 6px 0px rgba(0,0,0,0.1);
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid var(--secondary-color);
     margin-bottom: 10px;
 }
 
@@ -410,7 +418,7 @@ ul {
     font-weight: bold;
     border-radius: 2px 2px 2px 2px;
     box-shadow: 0px 10px 14px -7px #cccccc;
-    background:#006666;
+    background: var(--primary-color);
     text-shadow: #000000 1px 1px 1px;
  }
 
@@ -585,7 +593,7 @@ ul {
 
 
 .pie {
-    background-color: #006666; 
+    background-color: var(--primary-color);
     color: #fff;
     margin-top: 20px;
     display: grid;
@@ -605,7 +613,7 @@ ul {
 .pie a {
     text-transform: none;
     text-decoration: none;
-    color: #e9e9e9;
+    color: var(--texto);
 }
 
 .pie .logo-pie {
@@ -613,13 +621,13 @@ ul {
     grid-template-columns: auto;
     font-size: 2em;
     font-weight: 600;
-    color: #e9e9e9;
+    color: var(--texto);
     margin-right: 30px;
 }
 
 .pie .logo-pie a{
     text-decoration: none;
-    color: #e9e9e9;
+    color: var(--texto);
 }
 
 .pie .info-footer { 
@@ -652,7 +660,7 @@ ul {
 }
 .pie .info-footer ul li{
     list-style: none;
-    color:#e9e9e9;
+    color: var(--texto)
 }
 
 @media (min-width: 220px) and (max-width: 480px) {
@@ -674,8 +682,8 @@ ul {
         align-items: center;
         text-align: center;
         font-size: 2em;
-        font-weight: 600;
-        color: #e9e9e9;
+        font-weight: 800;
+        color: var(--texto);
     }
 
     .pie .info-footer { 
@@ -712,7 +720,7 @@ ul {
     }
     .pie .info-footer ul li{
         list-style: none;
-        color:#e9e9e9;
+        color: var(--texto);
     }
 
 }
@@ -735,7 +743,7 @@ ul {
         text-align: center;
         font-size: 3.5em;
         font-weight: 600;
-        color: #e9e9e9;
+        color:var(--texto);
     }
 
     .pie .info-footer { 
@@ -772,18 +780,18 @@ ul {
     }
     .pie .info-footer ul li{
         list-style: none;
-        color:#e9e9e9;
+        color: var(--texto);
     }
 
 }
 
-/* form */
+/*FORMULARIO DE CONTACTO*/
 
 .formulario {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-    background-color: #e9e9e9;
+    background-color: var(--texto);
     padding: 50px 55px;
     box-shadow: -1px 3px 4px rgba(0, 0, 0, 0.29);
     border-radius: 20px;
@@ -809,12 +817,9 @@ ul {
 select,
 option {
     background-color: rgba(0, 122, 122, 0.3);
+    width: 100%;
 }
 
-#pasaporte {
-    position: absolute;
-    top: 20px;
-}
 
 .formulario_input {
     width: 100%;
@@ -823,7 +828,6 @@ option {
     color: var(--primary-color);
     padding-left: 10px;
     border-radius: 5px;
-    /*VER SI QUIEREN BORDES REDONDEADOS O NO*/
     background-color: rgba(0, 122, 122, 0.3);
     height: 25px;
     line-height: 25px;
@@ -911,7 +915,6 @@ input::placeholder {
     color: var(--texto);
     background-color: rgba(0, 122, 122, 0.3);
     border-radius: 10px;
-    /*VER SI QUIEREN BORDES REDONDEADOS O TODOS LO BOTONES IGUALES*/
     box-shadow: 0px 9px 6px 0px rgba(0, 0, 0, 0.1);
     font-weight: 600;
     cursor: pointer;
@@ -978,4 +981,6 @@ button:hover {
     .formulario_btn {
         width: 100%;
     }
+
+  
 }

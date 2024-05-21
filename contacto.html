@@ -50,21 +50,25 @@
         <main class="contenido">
 
             <!-- slidebar  -->
-            <section class="slider">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6381483.543879167!2d-65.84138325511826!3d-38.64982853152916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5f5fdc667%3A0x3d2f77992af00fa8!2sArgentina!5e0!3m2!1ses!2sar!4v1714106304665!5m2!1ses!2sar"
-                    width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+
+            
+                <div class="mapa">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9733657470656!2d-58.372498099999994!3d-34.604835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad2a65fbba9%3A0x6b586b27075e06f!2sReconquista%20266%2C%20C1003%20San%20Nicolas%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1716263716923!5m2!1ses-419!2sar"
+                    width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
+                </div>
+                
+
             <!-- fin slidebar  -->
 
-<section class="destacados">
-    <div class="servicios-info">
-        <h4>
-            Nos ubicamos en : Dirección: XX - Prov. XX
-        </h4>
-    </div>
-</section>
+            <section class="destacados">
+                <div class="servicios-info">
+                    <h4>
+                        Nos ubicamos en : Reconquista 266 - Ciudad Autónoma de Buenos Aires
+                    </h4>
+                </div>
+            </section>
             <!-- Destacados: Nosotros -->
             <!--<h1><i class="fa-solid fa-building-columns"></i> SOBRE NOSOTROS</h1>-->
             <br>
@@ -82,14 +86,16 @@
                     </h1>
                     <p>
                         En PlataFácil, nos esforzamos por ofrecer la mejor experiencia financiera posible. </p>
-                        <p>Siempre estamos disponibles para ayudarte con cualquier pregunta, inquietud o comentario sobre nuestros
+                    <p>Siempre estamos disponibles para ayudarte con cualquier pregunta, inquietud o comentario sobre
+                        nuestros
                         productos y servicios. Ponte en contacto con nosotros para recibir asistencia personalizada de
                         nuestro equipo de atención al cliente.</p>
-                        <p> Valoramos tus sugerencias y comentarios, ya que nos
+                    <p> Valoramos tus sugerencias y comentarios, ya que nos
                         ayudan a mejorar continuamente nuestros servicios. </p>
-                        <p>Si encuentras algún problema técnico,háznoslo saber para solucionarlo rápidamente. </p>
-                        <p>Estamos aquí para ayudarte con consultas sobre tu cuenta, transacciones u otros aspectos financieros. </p><br>¡No dudes en contactarnos!
-                    
+                    <p>Si encuentras algún problema técnico,háznoslo saber para solucionarlo rápidamente. </p>
+                    <p>Estamos aquí para ayudarte con consultas sobre tu cuenta, transacciones u otros aspectos
+                        financieros. </p><br>¡No dudes en contactarnos!
+
                     <br>
                 </div>
             </section>
@@ -100,14 +106,14 @@
             <section class="servicios-destacados">
                 <h2 style="display: none;">SERVICIOS DESTACADOS</h2>
                 <br>
-                <form action="" class="formulario" id="formulario">
+                <form class="formulario" id="formulario">
 
                     <!-- Grupo: Nombre -->
                     <div class="formulario_grupo" id="grupo_nombre">
-                        <label for="nombre" class="formulario_label" required>Nombre *</label>
+                        <label for="nombre" class="formulario_label">Nombre *</label>
                         <div class="formulario_grupo-input">
                             <input type="text" class="formulario_input" name="nombre" id="nombre" size="35"
-                                placeholder="Juan">
+                                placeholder="Juan" required>
                             <i class="formulario_validacion-estado fas fa-times-circle"></i>
                         </div>
                         <p class="formulario_input-error">El nombre deben ser solamente letras.</p>
@@ -115,10 +121,10 @@
 
                     <!-- Grupo: Apellido -->
                     <div class="formulario_grupo" id="grupo_apellido">
-                        <label for="apellido" class="formulario_label" required>Apellido *</label>
+                        <label for="apellido" class="formulario_label">Apellido *</label>
                         <div class="formulario_grupo-input">
                             <input type="text" class="formulario_input" size="15" maxlength="15" name="apellido"
-                                id="apellido" placeholder="Perez">
+                                id="apellido" placeholder="Perez" required>
                             <i class="formulario_validacion-estado fas fa-times-circle"></i>
                         </div>
                         <p class="formulario_input-error">El apellido deben ser solamente letras.</p>
@@ -126,10 +132,10 @@
 
                     <!-- Grupo: Correo Electronico -->
                     <div class="formulario_grupo" id="grupo_correo">
-                        <label for="correo" class="formulario_label" required>Correo Electrónico *</label>
+                        <label for="correo" class="formulario_label">Correo Electrónico *</label>
                         <div class="formulario_grupo-input">
                             <input type="email" class="formulario_input" name="correo" id="correo"
-                                placeholder="correo@correo.com">
+                                placeholder="correo@correo.com" required>
                             <i class="formulario_validacion-estado fas fa-times-circle"></i>
                         </div>
                         <p class="formulario_input-error">El correo solo puede contener letras, numeros, puntos, guiones
@@ -139,10 +145,10 @@
 
                     <!-- Grupo: Teléfono -->
                     <div class="formulario_grupo" id="grupo_telefono">
-                        <label for="telefono" class="formulario_label" required>Teléfono *</label>
+                        <label for="telefono" class="formulario_label">Teléfono *</label>
                         <div class="formulario_grupo-input">
                             <input type="text" class="formulario_input" maxlength="14" name="telefono" id="telefono"
-                                size="20" placeholder="4491234567">
+                                size="20" placeholder="4491234567" required>
                             <i class="formulario_validacion-estado fas fa-times-circle"></i>
                         </div>
                         <p class="formulario_input-error">El telefono solo puede contener numeros y el maximo son 14
@@ -153,12 +159,14 @@
                     <div class="formulario_grupo" id="grupo_documento">
                         <label for="tipo_documento" class="formulario_label">Tipo de documento:</label>
                         <div class="formulario_grupo-input">
-                            <select class="select" name="documento" id="documento" name="tipo_doc">
+
+                            <select class="select" name="documento" id="tipo_documento">
                                 <option value="">Seleccione una opcion</option>
                                 <option value="DNI">DNI</option>
                                 <option value="LE">LE</option>
                                 <option value="LC">LC</option>
                                 <option value="PAS">Pasaporte</option>
+                            </select>
                         </div>
                     </div>
                     <!-- Grupo: Nro Documento -->
@@ -166,7 +174,7 @@
                         <label for="documento" class="formulario_label">Número de documento</label>
                         <div class="formulario_grupo-input">
                             <input type="text" class="formulario_input" name="nro_doc" maxlength="8"
-                                placeholder="12345678" size="11">
+                                placeholder="12345678" size="11" id="documento">
                             <i class="formulario_validacion-estado fas fa-times-circle"></i>
                         </div>
                         <p class="formulario_input-error">Coloque los 8 números de su documento.</p>
@@ -183,8 +191,8 @@
                     </div>
                     <!-- SUBIR ARCHIVO-->
                     <div class="formulario_grupo" id="grupo_file">
-                        <label for="foto" class="formulario_label">Adjunte el archivo</label>
-                        <input type="file" class="formulario_input">
+                        <label for="foto" class="formulario_label">Adjunte un archivo con información adicional</label>
+                        <input type="file" class="formulario_input" id="foto">
                     </div>
                     <!-- CHECKBOX -->
                     <div class="formulario_grupo" id="grupo_check">
@@ -209,13 +217,12 @@
                         </p>
                     </div>
                     <div class="formulario_label">* Campo Obligatorio</div>
-
                 </form>
-                
+
             </section>
-            
+
             <!-- Fin Destacados: Servicios -->
-            
+
             <!-- Destacados: Objetivos -->
 
         </main>
