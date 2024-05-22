@@ -74,3 +74,63 @@ formulario.addEventListener('submit', (e) => {
 		document.getElementById('formulario_mensaje').classList.add('formulario_mensaje-activo');
 	}
 });
+
+function calcularPlazoFijo() {
+
+	const monto = parseFloat(document.getElementById('montoPlazoFijo').value);
+
+	const plazo = parseInt(document.getElementById('plazoPlazoFijo').value);
+
+
+
+	const tasaAnual = 60; // Tasa de interés anual fija en Argentina (ejemplo)
+
+	const tasaDiaria = tasaAnual / 365;
+
+	
+
+	const intereses = monto * tasaDiaria * plazo;
+
+	const total = monto + intereses;
+
+
+
+	document.getElementById('resultadoPlazoFijo').innerHTML = `
+
+		<p>El monto a recibir al final del plazo es: <b><i>${total.toFixed(2)} ARS<i></b></p>
+
+		<p>Intereses generados: <b><i>${intereses.toFixed(2)} ARS<i></b></p>
+
+	`;
+
+}
+
+
+
+function calcularPrestamo() {
+
+	const monto = parseFloat(document.getElementById('montoPrestamo').value);
+
+	const plazo = parseInt(document.getElementById('plazoPrestamo').value);
+
+	const tasa = parseFloat(document.getElementById('tasaPrestamo').value);
+
+
+
+	const cuota = monto * (tasa / (1 - Math.pow(1 + tasa, -plazo)));
+
+	const totalIntereses = cuota * plazo - monto;
+
+
+
+	document.getElementById('resultadoPrestamo').innerHTML = `
+
+		<p>La cuota mensual a pagar es de: <b><i>${cuota.toFixed(2)} ARS<i></b></p>
+
+		<p>Total a pagar (capital + intereses):  <b><i>${(monto + totalIntereses).toFixed(2)} ARS<i></b></p>
+
+		<p>Total de intereses a pagar:  <b><i>${totalIntereses.toFixed(2)} ARS<i></b></p>
+
+	`;
+
+}
