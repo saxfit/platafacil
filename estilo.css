@@ -422,7 +422,10 @@ ul {
     text-shadow: #000000 1px 1px 1px;
  }
 
+ .terminos li {
+    padding-bottom: 1rem;
 
+ }
 
 .contenido .servicios-destacados .servicio .boton:hover {
     background: #007474;
